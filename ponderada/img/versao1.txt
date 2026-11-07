@@ -1,0 +1,71 @@
+Coleta: 2026-11-06T10:45:34.333241-03:00
+Python: 3.12.3
+
+$ python3 ponderada/codigo/versao1.py  # execução 1
+{
+  "versao": 1,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 20000,
+  "consumidas": 19961,
+  "unicas": 17810,
+  "perdidas": 2190,
+  "nao_produzidas": 0,
+  "produzidas_nao_recebidas": 2190,
+  "duplicadas": 2151,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 2.790691,
+  "estados": {
+    "produtor": "finalizado",
+    "consumidor": "espera ocupada por amostra"
+  },
+  "threads_bloqueadas_ao_sair": 0
+}
+
+$ python3 ponderada/codigo/versao1.py  # execução 2
+{
+  "versao": 1,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 20000,
+  "consumidas": 19955,
+  "unicas": 17692,
+  "perdidas": 2308,
+  "nao_produzidas": 0,
+  "produzidas_nao_recebidas": 2308,
+  "duplicadas": 2263,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 2.772551,
+  "estados": {
+    "produtor": "finalizado",
+    "consumidor": "espera ocupada por amostra"
+  },
+  "threads_bloqueadas_ao_sair": 0
+}
+
+$ python3 ponderada/codigo/versao1.py  # execução 3
+{
+  "versao": 1,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 20000,
+  "consumidas": 19833,
+  "unicas": 17639,
+  "perdidas": 2361,
+  "nao_produzidas": 0,
+  "produzidas_nao_recebidas": 2361,
+  "duplicadas": 2194,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 2.741763,
+  "estados": {
+    "produtor": "finalizado",
+    "consumidor": "espera ocupada por amostra"
+  },
+  "threads_bloqueadas_ao_sair": 0
+}

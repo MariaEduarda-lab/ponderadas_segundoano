@@ -1,0 +1,71 @@
+Coleta: 2026-11-06T10:45:34.333241-03:00
+Python: 3.12.3
+
+$ python3 ponderada/codigo/versao3.py  # execução 1
+{
+  "versao": 3,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 5,
+  "consumidas": 0,
+  "unicas": 0,
+  "perdidas": 20000,
+  "nao_produzidas": 19995,
+  "produzidas_nao_recebidas": 5,
+  "duplicadas": 0,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 1.003445,
+  "estados": {
+    "produtor": "aguarda vazio segurando mutex",
+    "consumidor": "aguarda mutex após cheio"
+  },
+  "threads_bloqueadas_ao_sair": 2
+}
+
+$ python3 ponderada/codigo/versao3.py  # execução 2
+{
+  "versao": 3,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 5,
+  "consumidas": 0,
+  "unicas": 0,
+  "perdidas": 20000,
+  "nao_produzidas": 19995,
+  "produzidas_nao_recebidas": 5,
+  "duplicadas": 0,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 1.002121,
+  "estados": {
+    "produtor": "aguarda vazio segurando mutex",
+    "consumidor": "aguarda mutex após cheio"
+  },
+  "threads_bloqueadas_ao_sair": 2
+}
+
+$ python3 ponderada/codigo/versao3.py  # execução 3
+{
+  "versao": 3,
+  "n": 5,
+  "solicitadas": 20000,
+  "produzidas": 5,
+  "consumidas": 0,
+  "unicas": 0,
+  "perdidas": 20000,
+  "nao_produzidas": 19995,
+  "produzidas_nao_recebidas": 5,
+  "duplicadas": 0,
+  "invalidas": 0,
+  "sequencia_correta": false,
+  "travou": true,
+  "duracao_s": 1.000164,
+  "estados": {
+    "produtor": "aguarda vazio segurando mutex",
+    "consumidor": "aguarda mutex após cheio"
+  },
+  "threads_bloqueadas_ao_sair": 2
+}
